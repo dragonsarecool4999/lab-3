@@ -14,13 +14,16 @@ def get_user_input():
 def calc_average_temperature(float_list):
     average = sum(float_list)/len(float_list)
     print(f"The average of the numbers are {average:3f}")
+    return average
 def calc_min_max_temperature(float_list):
     minimum_number = min(float_list)
     maximum_number = max(float_list)
     print(f"The largest number is {maximum_number} and the minimum number is {minimum_number}")
+    return [minimum_number, maximum_number]
 def calc_median_temperature(float_list):
     median_value = stats.median(float_list)
     print(f"The median value is {median_value}")
+    return median_value
 def main():
 
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
